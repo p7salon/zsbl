@@ -614,7 +614,7 @@ uint64_t build_board_info(void)
 	return 0;
 }
 
-int boot(void)
+int plat_main(void)
 {
 	print_banner();
 	print_core_ctrlreg();
@@ -661,4 +661,3 @@ int boot(void)
 
 	return 0;
 }
-plat_init(boot);
