@@ -1,6 +1,8 @@
 #ifndef __PLATFORM_H__
 #define __PLATFORM_H__
 
+#define VERSION_PLATFORM	"2"
+
 // BM1690 soc mode
 #if (CONFIG_RAM_START==0xc80000000)
 #define OPENSBI_ADDR	0xc00000000
