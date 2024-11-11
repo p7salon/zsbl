@@ -16,6 +16,7 @@ config PLAT_SG2042
 
 config PLAT_SG2044
 	bool "SG2044"
+	select RISCV_CMO
 
 endchoice
 
