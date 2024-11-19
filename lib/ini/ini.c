@@ -19,7 +19,7 @@ int zsbl_isspace(int c);
 #include <ctype.h>
 #include <string.h>
 
-#include "ini.h"
+#include <lib/ini.h>
 
 #if !INI_USE_STACK
 #if INI_CUSTOM_ALLOCATOR

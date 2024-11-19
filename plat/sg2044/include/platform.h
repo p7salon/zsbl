@@ -74,8 +74,4 @@
 
 #undef __SG_QEMU__
 
-#define CHIP_WORK_MODE_POD	0x1
-#define CHIP_WORK_MODE_CPU	0x2
-#define CHIP_WORK_MODE_PCIE	0x3
-
 #endif
