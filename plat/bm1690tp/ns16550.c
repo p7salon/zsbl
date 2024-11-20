@@ -83,6 +83,9 @@ int uart_init(void)
 	unsigned int baudrate = UART_BAUDRATE;
 	unsigned int pclk = UART_PCLK;
 
+	if(mmio_read_32(CLINT_MHART_ID))
+		return 0;
+
 	/* if any interrupt has been enabled, that means this uart controller
 	 * may be initialized by some one before, just use it without
 	 * reinitializing. such situation occur when main cpu and a53lite share
